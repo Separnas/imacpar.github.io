@@ -1,13 +1,5 @@
 
-'use client'
-import { useEffect } from 'react'
-export function PWARegister(){
-  useEffect(()=>{
-    if('serviceWorker' in navigator){
-      window.addEventListener('load',()=>{
-        navigator.serviceWorker.register('/sw.js').catch(()=>{})
-      })
-    }
-  },[])
-  return null
-}
+export type Task = { id: string; title: string; date: string; completed: boolean }
+export type Goal = { id: string; title: string; progress: number }
+export type RecurringTask = { id: string; title: string; frequency: 'daily' | 'weekly' | 'monthly' }
+export type SleepEntry = { date: string; bedtime: string; wake: string; durationMinutes: number }

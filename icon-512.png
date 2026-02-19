@@ -1,4 +1,1 @@
-
-export function cn(...classes: (string | false | null | undefined)[]) {
-  return classes.filter(Boolean).join(' ')
-}
+self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));
