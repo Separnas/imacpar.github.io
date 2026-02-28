@@ -1,13 +1,11 @@
-"use client";
-
-import React from "react";
-
-type Props = {
-  children: React.ReactNode;
+const Page = () => { 
+    return (
+        <div>
+            <h1>Welcome to my website!</h1>
+            <p>This is an example of how to use React with TypeScript.</p>
+            <p>Enjoy your stay!</p>
+        </div>
+    );
 };
 
-export default function UserGate({ children }: Props) {
-  // Just nu släpper vi bara igenom allt innehåll.
-  // Här kan du senare lägga in spärrar, t.ex. inloggning, PIN-kod, mm.
-  return <>{children}</>;
-}
+export default Page;
