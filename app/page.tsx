@@ -36,31 +36,20 @@ export default function Page() {
     <UserGate>
       <div className="mx-auto max-w-xl px-4 pb-16">
         <Header />
-
         <QuoteBanner />
-
         <div className="mt-2 flex items-center justify-center">
           <ProgressRing done={done} total={total} />
         </div>
-
         <Tabs tab={tab} setTab={setTab} />
-
         <WeekStrip date={date} setDate={setDate} />
-
         <div className="text-center mt-4 mb-2 text-sm text-slate-600">
           <span className="font-medium">
             {fmt(date, "EEEE d MMMM")}
           </span>
         </div>
-
         {tab === 'schema' ? (
-          <TaskList
-            tasks={list}
-            onToggle={toggle}
-            onDelete={remove}
-          />
+          <TaskList tasks={list} onToggle={toggle} onDelete={remove} />
         ) : null}
-
         <div className="flex justify-center mt-5">
           <button
             className="px-5 py-2 rounded-full bg-[var(--primary)] text-white shadow"
@@ -69,16 +58,15 @@ export default function Page() {
             + Ny uppgift
           </button>
         </div>
-
         <NewTaskModal
           open={open}
           setOpen={setOpen}
           date={date}
           add={add}
         />
-
         <ReminderCard />
       </div>
     </UserGate>
   );
 }
+``
