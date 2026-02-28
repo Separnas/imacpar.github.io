@@ -1,0 +1,1 @@
+export default function QuoteBanner(){return (<div className="gradient-badge rounded-2xl px-4 py-3 text-center text-[15px] text-slate-700 font-medium">Idag blir en bra dag – en sak i taget! 💜</div>);}
