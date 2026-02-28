@@ -1,4 +1,3 @@
-// app/page.tsx
 'use client';
 
 import { useMemo, useState } from 'react';
@@ -21,7 +20,6 @@ export default function Page() {
   const [open, setOpen] = useState(false);
 
   const { user } = useUser();
-
   const { tasksFor, add, toggle, remove, stats } = useTasks(user ?? 'anon');
 
   const todayKey = ymd(date);
@@ -44,7 +42,7 @@ export default function Page() {
         <WeekStrip date={date} setDate={setDate} />
         <div className="text-center mt-4 mb-2 text-sm text-slate-600">
           <span className="font-medium">
-            {fmt(date, "EEEE d MMMM")}
+            {fmt(date, 'EEEE d MMMM')}
           </span>
         </div>
         {tab === 'schema' ? (
@@ -69,4 +67,3 @@ export default function Page() {
     </UserGate>
   );
 }
-``
