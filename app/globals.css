@@ -1,0 +1,12 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --bg:#faf6f8; --card:#ffffff; --muted:#8c8aa0; --primary:#7c6cff; --primary-2:#be79ff; --accent:#ff89d6; --good:#10b981; --warning:#f59e0b; }
+
+.gradient-badge { background: linear-gradient(90deg, rgba(124,108,255,0.15) 0%, rgba(190,121,255,0.15) 100%); border: 1px solid rgba(124,108,255,0.25); }
+.card { @apply bg-white rounded-xl shadow-sm border border-slate-100; }
+.segment { @apply inline-flex rounded-full bg-white border border-slate-200 p-1; }
+.segment button { @apply px-3 py-1.5 text-sm rounded-full text-slate-600; }
+.segment button[data-active="true"] { @apply bg-[var(--primary)] text-white; }
