@@ -1,7 +1,7 @@
 
 # Min Dag ✨ – Komplett paket
 
-Detta paket innehåller **alla filer** för din privata familjekalender:
+Detta paket innehåller **alla filer** för din privata familjekalender yes:
 - Next.js 14 (App Router) – statisk export till `out/`
 - Tailwind CSS
 - PWA (manifest, ikoner, service worker)
