@@ -10,7 +10,7 @@ import WeekStrip from '../components/WeekStrip';
 import TaskList from '../components/TaskList';
 import NewTaskModal from '../components/NewTaskModal';
 import ReminderCard from '../components/ReminderCard';
-import UserGate from './UserGate';
+import UserGate from '../components/UserGate';
 import { fmt, ymd } from '../lib/date';
 import { useUser } from '../hooks/useUser';
 import { useTasks } from '../hooks/useTasks';
