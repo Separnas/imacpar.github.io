@@ -1,4 +1,4 @@
-use client";
+"use client";
 
 import React from "react";
 
@@ -7,7 +7,7 @@ type Props = {
 };
 
 export default function UserGate({ children }: Props) {
-  // Just nu släpper vi bara igenom allt som normalt.
-  // Du kan lägga in spärrar, logik osv senare om du vill.
+  // Just nu släpper vi bara igenom allt innehåll.
+  // Här kan du senare lägga in spärrar, t.ex. inloggning, PIN-kod, mm.
   return <>{children}</>;
 }
