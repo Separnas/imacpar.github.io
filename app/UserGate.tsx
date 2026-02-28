@@ -8,4 +8,5 @@ type Props = {
 
 export default function UserGate({ children }: Props) {
   // Just nu släpper vi bara igenom allt innehåll.
-  // Här kan du
+  // Här kan du senare lägga in spärrar, t.ex. inloggning, PIN-kod, mm.
+  return <>{children}</>;
