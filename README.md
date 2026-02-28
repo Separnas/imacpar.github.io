@@ -1,27 +1,22 @@
-Test Rebuild
-# Min Dag v2 – GitHub Pages (PWA)
 
-## Kom igång
-```bash
-npm install
-npm run dev
-```
+# Min Dag ✨ – Komplett paket
 
-## Bygg & exportera statiskt (för Pages)
-```bash
-npm run build
-```
-Detta skapar `out/` som publiceras av GitHub Actions.
+Detta paket innehåller **alla filer** för din privata familjekalender:
+- Next.js 14 (App Router) – statisk export till `out/`
+- Tailwind CSS
+- PWA (manifest, ikoner, service worker)
+- GitHub Pages workflow
+- Lokal lagring per användare (ingen delning, ingen server)
 
-## Deploy
-1) Skapa repo: `imacpar.github.io`  
-2) Push:a koden till `main`  
-3) I GitHub → Settings → Pages → Source: GitHub Actions  
-4) Vänta på workflow → Live på https://imacpar.github.io/
+## Så kör du
+1. Lägg alla filer i repo‐roten.
+2. Commit & push till `main`.
+3. I **Settings → Pages**: Source = **GitHub Actions**.
+4. När Actions är **grön**: öppna sidan på
+   `https://<dittkonto>.github.io/imacpar.github.io/` (hård omladdning).
 
-## PWA
-- `public/manifest.json`, `public/sw.js`, `public/icons/*`
-- Registreras via `app/pwa-register.tsx`
+På mobil: "Lägg till på hemskärmen" för app‐upplevelse.
 
-## Notering
-Denna app använder endast client-side rendering och localStorage.
+## Viktigt om privat data
+Varje enhet sparar sin egen data i **LocalStorage** under nycklar som `md:v1:<namn>:tasks`.
+Deploy/uppdateringar rör **inte** den datan.
